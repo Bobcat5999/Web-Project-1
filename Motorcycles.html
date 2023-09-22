@@ -61,9 +61,40 @@
         <td>370lbs</td>
       </tr>
     </table>
+    <!-- table of motorcycles -->
     <hr>
-    <form>
-      
+    <form method="get">
+      <h1>Build your own bike</h1>
+      <input type="radio" id="2stroke" name="fuel_type" value="2stroke">
+      <label for="2stroke">2 Stroke</label><br>
+      <input type="radio" id="4stroke" name="fuel_type" value="4stroke">
+      <label for="4stroke">4 Stroke</label><br>
+      <br>
+      <label for="Engine">Choose your engine size:</label>
+      <select name="Engine" id="Engine">
+        <option value="250cc">250cc</option>
+        <option value="300cc">300cc</option>
+        <option value="400cc">400cc</option>
+        <option value="500cc">500cc</option>
+        <option value="600cc">600cc</option>
+        <option value="700cc">700cc</option>
+        <option value="800cc">800cc</option>
+        <option value="900cc">900cc</option>
+        <option value="1000cc">1000cc</option>
+      </select>
+      <br>
+      <br>
+      <label for="primecolor">Select a primary color:</label>
+      <input type="color" id="primecolor" name="primecolor"><br>
+      <label for="seccolor">Select a secondary accent color:</label>
+      <input type="color" id="seccolor" name="seccolor"><br>
+      <br>
+      <label>Price (between &dollar;5000 and &dollar;50000):</label>
+      <input type="range" value="5000" min="5000" max="50000" oninput="this.nextElementSibling.value = this.value"/>
+      <output>0</output><br />
+      <br>
+      <input type="submit">
     </form>
+    <!-- forms for custom motorbike -->
   </body>
 </html>
